@@ -1,9 +1,10 @@
 import './globals.css'
-import ToasterContext from './context/ToasterContext'
 import AuthContext from './context/AuthContext'
+import ActiveStatus from './components/ActiveStatus'
+import ToasterContext from './context/ToasterContext'
 
 export const metadata = {
-  title: 'A-M-D Messenger',
+  title: 'AMD - Messenger',
   description: 'Messenger',
 }
 
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <AuthContext>
           <ToasterContext />
+          <ActiveStatus />
           {children}
         </AuthContext>
       </body>
