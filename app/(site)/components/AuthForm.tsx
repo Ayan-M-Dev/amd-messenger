@@ -101,6 +101,7 @@ const AuthForm = () => {
         }
 
         if (callback?.ok) {
+          toast.success("Login successfully!");
           router.push("/conversations");
         }
       })
